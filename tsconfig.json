@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "target": "ES5" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+      "module": "commonjs" /* Specify what module code is generated. */,
+      "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+      "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+      "lib": ["ES5", "DOM"],
+      "outDir": "./dist", // 添加输出路径
+      "typeRoots": ["node_modules/@types", "./typings"],
+      "strict": true /* Enable all strict type-checking options. */,
+      "allowJs": true, // 允许编译器编译JS，JSX文件
+
+      "checkJs": true, // 允许在JS文件中报错，通常与allowJS一起使用
+      // "suppressImplicitAnyIndexErrors": true,
+
+      "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+      "sourceMap": true // 生成目标文件的sourceMap文件
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "./dist/**/*"]
+}
